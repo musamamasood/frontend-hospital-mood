@@ -27,6 +27,7 @@ input,button {
 button {
     border: none;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 ul,ol,figure {
