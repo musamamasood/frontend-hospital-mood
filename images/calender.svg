@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112.96" height="112.96" viewBox="0 0 112.96 112.96">
+  <defs>
+    <filter id="Combined_Shape" x="0" y="0" width="112.96" height="112.96" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#0b0b0b" flood-opacity="0.373"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Combined_Shape)">
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M10.881,94.96A10.894,10.894,0,0,1,0,84.079V18.794A10.893,10.893,0,0,1,10.881,7.914h8.9V2.967a2.967,2.967,0,0,1,5.935,0V7.914H69.242V2.967a2.967,2.967,0,0,1,5.935,0V7.914h8.9A10.893,10.893,0,0,1,94.96,18.794V84.079A10.894,10.894,0,0,1,84.079,94.96ZM5.935,84.079a4.952,4.952,0,0,0,4.946,4.946h73.2a4.952,4.952,0,0,0,4.946-4.946V37.589H5.935Zm0-65.285v12.86H89.025V18.794a4.951,4.951,0,0,0-4.946-4.946h-8.9v6.925a2.967,2.967,0,0,1-5.935,0V13.848H25.718v6.925a2.967,2.967,0,0,1-5.935,0V13.848h-8.9A4.951,4.951,0,0,0,5.935,18.794ZM13,58a1,1,0,0,1-1-1V49a1,1,0,0,1,1-1h9a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1Z" transform="translate(9 3)" fill="#fff"/>
+  </g>
+</svg>
