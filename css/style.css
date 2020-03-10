@@ -44,6 +44,10 @@ ul,ol,figure {
     margin: 0;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
 body {
     font-family: 'PoppinsRegular';
 }
@@ -110,33 +114,33 @@ body {
     margin: 0 0 0 20px;
 }
 
-.controler .volume-bar {
+.controler .slider-bar {
  width: 527px;
- height: 15px;
- border-radius: 10.5px;
- background-image: linear-gradient(#E6E6E6, #FFFFFF);
- position: relative;
 }
 
-.controler .volume-bar .vc-btn {
-    position: absolute;
- background-image: linear-gradient(#E6E6E6, #FFFFFF);
- height: 50px;
- width: 50px;
- border-radius: 50%;
- display: flex;
- align-items: center;
- justify-content: center;
- top: 50%;
- transform: translateY(-50%);
- left: 100px;
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background-image: linear-gradient(#E6E6E6, #FFFFFF);
+    border-radius: 10px;
+    box-shadow: 0 7px 20px 0 rgba(0, 0,0, 0.45);
+    position: relative;
 }
 
-.controler .volume-bar .vc-btn img {
-   width: 17px;
-   transform:rotate(90deg);
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 65px;
+    height: 65px;
+    background: url('./../images/range-icon.png') no-repeat center;
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+    margin: 5px 0 0;
 }
-
 
 /* header css */
 
@@ -366,9 +370,7 @@ body {
     margin:10px 0 0 ;
     display: block;
 }
-/* .nav-bar .menu .menu-item .link:hover{
-    color: ;
-} */
+
 .nav-bar .menu .menu-item .link:hover #day-version-2 path,
 .nav-bar .menu .menu-item .link:hover #day-version-2 {
     fill: url(#hover-effect);
@@ -380,6 +382,7 @@ body {
 .volume {
     padding: 32px 0 0 97px;
 }
+
 .volume-wrapper {
     margin: 90px auto 184px;
     max-width: 980px;
@@ -478,7 +481,7 @@ body {
 }
 
 
-/* settings-card */
+/* settings css */
 
 .hp-row .settings-card{
     text-align: center;
@@ -494,6 +497,36 @@ body {
 }
 video{
     border-radius: 10px;
+}
+
+/* bed css */
+
+.bed {
+    max-width: 1050px;
+    text-align: right;
+    display: flex;
+    position: relative;
+}
+
+.bed  svg{
+  width: 100%;
+}
+
+.profile + .controler {
+   max-width: 430px;
+   margin: 45px auto 70px;
+}
+
+.bed .vertical-controller {
+    position: absolute;
+    top: 36%;
+    right: -10%;
+    transform: rotate(90deg);
+    width: 316px;
+}
+
+.bed .vertical-controller .slider {
+   
 }
 
 /* media queries */
@@ -765,10 +798,6 @@ video{
         margin-right: 0;
     }
 }
-
-
-
-
 
 @media only screen and (max-width:640px) { 
 
