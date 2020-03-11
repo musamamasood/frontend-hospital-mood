@@ -3,65 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lautstarke</title>
+    <title>Music</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Jquery -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
         <!-- header start -->
         <header class="header">
             <a class="logo" href="#">
-                    <img src="./images/hospital-logo.png"  alt="hospital logo" />
+                 <img src="./images/hospital-logo.png"  alt="hospital logo" />
             </a>
             <div class="d-flex align-items-center">
                 <div class="time-wrap">
-                    <span class="d-block time">17:23</span>
-                    <span class="date">18 Februar 2020</span>
+                   <span class="d-block time">17:23</span>
+                   <span class="date">18 Februar 2020</span>
                 </div>
                 <div class="weather">
-                    <img src="./images/Cloud-icon.png"  alt="Cloud logo" />
-                    <span class="d-block">
-                        21°C
-                    </span> 
-                </div>
-                <button class="toggler-btn">
-                    <img src="./images/burger-icon.png" alt="icon" />
-                </button>
+                   <img src="./images/Cloud-icon.png"  alt="Cloud logo" />
+                   <span class="d-block">
+                       21°C
+                   </span> 
+               </div>
+               <button class="toggler-btn">
+                   <img src="./images/burger-icon.png" alt="icon" />
+               </button>
             </div>
         </header>
         <!-- header end -->
 
-        <!-- volume start -->
-        <main class="volume">
-            <div class="d-flex align-items-center">
-                 <figure class="mr-3">
-                     <img src="./images/lautstarke.svg" alt="lautstarke" />
-                 </figure>
-                 <h2>Lautstärke</h2>
-            </div>
-            <div class="volume-wrapper">
-                <div class="d-flex align-items-center justify-content-center">
-                    <img class="icon" src="./images/mute-icon.png" alt="mute icon" />
-                    <div class="controler d-flex align-items-center justify-content-center">
-                        <button class="action-btn">
-                            <img src="./images/left-arrow.png" alt="left arrow icon" />
+        <!-- modal start -->
+        <div class="modal-wrapper">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+              </button>
+            <!-- Modal -->
+            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <img src="./images/cross-icon.png" alt="cross" />
+                            <!-- <span aria-hidden="true">&times;</span> -->
                         </button>
-                        <div class="slider-bar">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <div class="modal-body">
+                            <div class="modal-content">
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
+                                    <g id="clock" transform="translate(0 -0.001)">
+                                        <path id="Shape" d="M6.9,29.265A7.73,7.73,0,0,1,.65,22.742a46.438,46.438,0,0,1,0-15.485A7.729,7.729,0,0,1,6.9.735a60.146,60.146,0,0,1,18.741,0,7.73,7.73,0,0,1,6.251,6.521,46.486,46.486,0,0,1,0,15.485,7.731,7.731,0,0,1-6.251,6.523A60.317,60.317,0,0,1,16.275,30,60.432,60.432,0,0,1,6.9,29.265ZM7.3,3.246a5.2,5.2,0,0,0-4.14,4.433,43.973,43.973,0,0,0,0,14.64A5.2,5.2,0,0,0,7.3,26.754a57.953,57.953,0,0,0,8.971.7,58.071,58.071,0,0,0,8.978-.7,5.2,5.2,0,0,0,4.14-4.435,43.925,43.925,0,0,0,0-14.64,5.2,5.2,0,0,0-4.14-4.433,57.575,57.575,0,0,0-17.95,0ZM18.352,19.8l-2.979-2.979a1.268,1.268,0,0,1-.373-.9V11.094a1.272,1.272,0,0,1,2.543,0v4.3l2.607,2.607a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0)" fill="#232323"/>
+                                    </g>
+                                    </svg>
+                                    <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                </div>
+                                <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
+                                <h4 class="type">Behandelnder Arzt</h4>
+                                <div class="d-flex doc-info">
+                                    <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc"/>
+                                    <div class="about-doc">
+                                        <h5 class="doc-name">Anna Muller</h5>
+                                        <span class="doc-designation">PHD Heart Specialist</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="modal-content">
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
+                                    <g id="clock" transform="translate(0 -0.001)">
+                                        <path id="Shape" d="M6.9,29.265A7.73,7.73,0,0,1,.65,22.742a46.438,46.438,0,0,1,0-15.485A7.729,7.729,0,0,1,6.9.735a60.146,60.146,0,0,1,18.741,0,7.73,7.73,0,0,1,6.251,6.521,46.486,46.486,0,0,1,0,15.485,7.731,7.731,0,0,1-6.251,6.523A60.317,60.317,0,0,1,16.275,30,60.432,60.432,0,0,1,6.9,29.265ZM7.3,3.246a5.2,5.2,0,0,0-4.14,4.433,43.973,43.973,0,0,0,0,14.64A5.2,5.2,0,0,0,7.3,26.754a57.953,57.953,0,0,0,8.971.7,58.071,58.071,0,0,0,8.978-.7,5.2,5.2,0,0,0,4.14-4.435,43.925,43.925,0,0,0,0-14.64,5.2,5.2,0,0,0-4.14-4.433,57.575,57.575,0,0,0-17.95,0ZM18.352,19.8l-2.979-2.979a1.268,1.268,0,0,1-.373-.9V11.094a1.272,1.272,0,0,1,2.543,0v4.3l2.607,2.607a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0)" fill="#232323"/>
+                                    </g>
+                                    </svg>
+                                    <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                </div>
+                                <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
+                                <h4 class="type">Behandelnder Arzt</h4>
+                                <div class="d-flex doc-info">
+                                    <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc"/>
+                                    <div class="about-doc">
+                                        <h5 class="doc-name">Anna Muller</h5>
+                                        <span class="doc-designation">PHD Heart Specialist</span>
+                                    </div>
+                                </div>
+                            </div>   
                         </div>
-                        <button class="action-btn">
-                            <img src="./images/right-arrow.png" alt="right arrow icon" />
-                        </button>
                     </div>
-                    <img class="icon" src="./images/full-volume.png" alt="full volume icon" />
                 </div>
             </div>
-        </main>
-        <!-- volume end -->
-        
+        </div>
+        <!-- modal end -->
+
         <!-- nav start -->
         <nav class="nav-bar">
             <ul class="menu">
@@ -125,7 +161,7 @@
                         <span>Helligkeit</span>
                     </a>
                 </li>
-               <li class="menu-item">
+            <li class="menu-item">
                     <a class="link active" href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="44px" viewBox="0 0 46 44" version="1.1">
                             <defs>
@@ -163,7 +199,7 @@
                         <span>Bett</span>
                     </a>
                 </li>
-               <li class="menu-item">
+            <li class="menu-item">
                     <a class="link" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px" height="38px" viewBox="0 0 42 38" version="1.1">
                             <linearGradient id="hover-effect">
@@ -207,7 +243,7 @@
                     <a class="link" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20.824" height="24.201" viewBox="0 0 20.824 24.201">
                             <path id="Shape" d="M10.5,24h-.375a4.523,4.523,0,0,1-4.4-3.564H.938a.937.937,0,1,1,0-1.875h.938V12a8.355,8.355,0,0,1,1.7-5.073,8.513,8.513,0,0,1,4.3-3,2.688,2.688,0,0,1-.281-1.2,2.718,2.718,0,1,1,5.437,0,2.684,2.684,0,0,1-.281,1.2,8.52,8.52,0,0,1,4.3,3A8.353,8.353,0,0,1,18.751,12v6.562h.937a.937.937,0,1,1,0,1.875H14.9A4.522,4.522,0,0,1,10.5,24ZM7.673,20.437h0a2.641,2.641,0,0,0,2.451,1.689H10.5a2.649,2.649,0,0,0,2.454-1.689Zm2.639-15A6.569,6.569,0,0,0,3.75,12v6.562H16.876V12A6.57,6.57,0,0,0,10.312,5.438Zm0-3.564a.844.844,0,1,0,.844.844A.844.844,0,0,0,10.312,1.874Z" transform="translate(0.099 0.1)" fill="#232323" stroke="#232323" stroke-miterlimit="10" stroke-width="0.2"/>
-                          </svg>
+                        </svg>
                         <span>Rufen</span>
                     </a>
                 </li>
@@ -215,5 +251,11 @@
         </nav>
         <!-- nav end -->
     </div>
+    <script>
+        
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
 </body>
 </html>

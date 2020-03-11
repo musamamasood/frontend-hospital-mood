@@ -11,6 +11,10 @@
     font-family: 'PoppinsLight';
     src: url('./../fonts/Poppins-Light.ttf');
   }
+  @font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('./../fonts/Poppins-SemiBold.ttf');
+  }
   
   /* global css  */
 *{
@@ -156,7 +160,7 @@ body {
 
 .header .time-wrap {
    text-align: center;
-   margin: 0 22px 0 0;
+   margin: 0 47px 0 0;
    color: #232323;
 }
 
@@ -197,7 +201,7 @@ body {
 .hp-row .hp-card {
    min-width: 234px;
    min-height: 245px;
-   margin: 0 22px 15px 0;
+   margin: 0 20px 15px 0;
 }
 
 .hp-row  .hp-card h5{
@@ -300,8 +304,9 @@ body {
     background-position-x: -42px;
 }
 
+
 .nav-bar .menu .menu-item:nth-child(3):hover {
-    background-position: -24px -4px;
+    background-position: -24px -6px;
 }
 
 
@@ -371,6 +376,11 @@ body {
     display: block;
 }
 
+
+.nav-bar .menu .menu-item:nth-child(3) .link {
+    padding: 32px 0 0;
+}
+
 .nav-bar .menu .menu-item .link:hover #day-version-2 path,
 .nav-bar .menu .menu-item .link:hover #day-version-2 {
     fill: url(#hover-effect);
@@ -426,9 +436,17 @@ body {
     margin: 36px auto 184px;
 }
 
+.profile .hp-row .hp-card {
+    justify-content: start;
+    padding: 20px;
+    min-width: 240px;
+    min-height: 227px;
+}
+
 .profile .hp-row .hp-card h5{
     font-size: 20px;
     text-align: center;
+    margin: 0 0 55px;
 }
 
 .profile .hp-media{
@@ -527,6 +545,374 @@ video{
 
 .bed .vertical-controller .slider {
    
+}
+
+/* music css */
+
+.music .active-music {
+  margin: 0 30px 0 0;
+}
+
+.music .active-music .music-img {
+   width: 154px;
+   height: 148px;
+   overflow: hidden;
+   border-radius: 6px;
+   position: relative;
+}
+
+.music .active-music .music-img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(#00000000,#000000ad);
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+}
+
+.music .play-list {
+  width: 75%;
+  position: relative;
+}
+
+/* player controler css */
+  
+.player {
+    background: linear-gradient(#434343,#0F1217);
+    position: absolute;
+    right: 0;
+    transform: translateY(-125%);
+    width: 502px;
+    flex-wrap: wrap;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 7px 20px 0 rgba(0, 0,0, 0.45);
+  }
+  
+  .player .volume {
+    display: none;
+  }
+  .player .title {
+    font-family: 'PoppinsSemiBold';
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 82px;
+    z-index: 1;
+    width: 255px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .player .cover {
+    border-radius: 3px;
+    height: 57px;
+    width: 63px;
+    background-size: cover;
+  }
+  .player .progressbar {
+    background-color: #626366;
+    cursor: pointer;
+    z-index: 1;
+    height: 6px;
+    position: absolute;
+    bottom: 17px;
+    left: 120px;
+    z-index: 1;
+    width: 192px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    justify-content: space-around;
+  }
+
+  .controls div {
+    cursor: pointer;
+  }
+
+  .controls .stop {
+      display: none;
+  }
+
+  .controls .play,
+  .controls .pause {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0px 5px;
+  }
+
+   
+  .controls .rew,
+  .controls .fwd {
+    width: 22px;
+    height: 26px;
+    margin: 5px 5px 5px 5px;
+  }
+  .controls .play {
+    background:  url("./../images/play-icon.png") no-repeat;
+  }
+  .controls .pause {
+    background: url("./../images/play-icon.png") no-repeat;
+    display: none;
+  }
+  .controls .rew {
+    background:  url("./../images/back-icon.png") no-repeat;
+  }
+  .controls .fwd {
+    background:  url("./../images/next-icon.png") no-repeat;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .controls .visible {
+    display: block;
+  }
+
+  .progressbar div {
+    width: 0%;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .bar-loaded {
+    display: none;
+  }
+  .bar-played {
+    background: #fff;
+    z-index: 2;
+  }
+  .timeHolder {
+    bottom: 10px;
+    position: absolute;
+    margin: 0px 15%;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .time-current,
+  .time-duration {
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  .time-separator {
+      display: none;
+  }
+
+  /* player list */
+
+  .playlist li {
+    color: #151b48;
+    cursor: pointer;
+    padding: 13px 14px 15px;
+    border-bottom: 1px dashed #D8D8D8;
+  }
+
+  .playlist li:last-child {
+    border-bottom: none;
+  }
+
+  .playlist li > a{
+    color: #232323;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .playlist li > a span {
+    min-width: 26px;
+    display: inline-block;
+  }
+
+  .playlist li.active > a span::after {
+    content: "";
+    background: url('./../images/music-bars.png') no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    margin: 0 17px 0;
+}
+
+
+/* modal css */
+
+.modal-wrapper {
+    min-height: 100vh;
+}
+
+.modal-content{
+    border: none;
+}
+.modal-content .title{
+    font-size: 32px;
+    font-family: 'PoppinsSemiBold';
+    margin: 0 0 0 18px;
+}
+
+.modal-content .subtitle{
+    margin: 5px 0 0;
+}
+
+.modal-dialog {
+  max-width: 770px;
+}
+
+.modal-body .modal-content {
+  border-bottom: 1px dashed #D8D8D8;
+}
+
+.modal-body .modal-content:nth-child(2){
+    border-bottom: none;
+    padding: 18px 0 0;
+}
+
+.modal-content .type {
+   font-size: 18px;
+   margin: 15px 0 10px;
+}
+
+.modal-content .doc-info{
+    padding: 0 0 20px;
+}
+
+.modal-content .doc-info .doc-name {
+  font-size: 18px;
+}
+
+.modal-content .doc-designation {
+  font-size: 14px;
+  display: block;
+}
+
+.modal-content .doc-info .doc-img {
+   width: 100px;
+   height: 94px;
+   border-radius: 6px;
+}
+
+.modal-content .doc-info .about-doc {
+  margin: 0 0 0 12px;
+}
+
+.modal-content  .close{
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    z-index: 3;
+    top: 15px;
+}
+
+.close:not(:disabled):not(.disabled):hover{
+    opacity: 1;
+}
+
+
+/* Online Shop Coffee >> Coffee */
+
+.btninput{
+    display: flex;
+}
+
+.hp-card h6{
+    color: #ffffff;
+    margin: 43px 0px 8px 0px;
+    font-size: 18px;
+}
+
+.btninput input[type=number]{
+    outline: none;
+    background: #ffffff;
+    border: none;
+    width: 51px;
+    height: 55px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    margin-right: 10px;
+    padding: 0 0 0px 15px;
+    text-align: center;
+}
+
+.btn{
+    color: #232323 !important;
+    background: linear-gradient(180deg, white, #a8a8a8);
+    width: 135px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 6px;
+    border: none;
+}
+
+.card-padding{
+    padding: 15px 0;
+}
+
+.card-padding h5{
+    font-size: 24px;;
+}
+
+.coffee .hp-row .hp-card{
+    width: 240px;
+    height: 308px;
+}
+
+.item-price{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    justify-content: flex-end;
+}
+
+.btn1{
+    width: 177px;
+    height: 58px;
+    background: linear-gradient(180deg, #F39200, #E94E1B);
+    color: #fff !important;
+    font-size: 30px;;
+}
+
+.item-total{
+    margin-top: 6px;
+    max-width: 1024px;
+    text-align: right;
+    margin-right: auto;
+    width: 100%;
+}
+
+.item-price h3{
+    font-size: 24px;
+}
+
+.item-price h3 sup{
+    font-size: 14px;
+    top: -0.96em;
+}
+
+.item-price h4{
+    font-size: 24px;
+    margin-right: 57px;
+}
+
+.item-price h5{
+    font-size: 20px;
+    margin-right: 57px;
+
+}
+
+.item-price h6{
+    font-size: 18px;
 }
 
 /* media queries */
@@ -688,6 +1074,10 @@ video{
         fill: #ED6E0E;
         stroke: #ED6E0E;
     }
+
+    .bed svg {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -712,7 +1102,7 @@ video{
     .home{
         padding: 32px 0 0 25px;
     }
-
+    .profile .hp-row .hp-card,
     .hp-row .hp-card {
         min-width: 160px;
         min-height: 160px;
@@ -733,6 +1123,31 @@ video{
 
     .header .weather{
         display: none;
+    }
+
+    .profile .username h2 {
+        font-size: 26px;
+    }
+
+    .profile .hp-row .hp-card h5{
+        margin: 0 0 20px;
+    }
+
+    .music .active-music {
+       width: 100%;
+    }
+
+    .music .active-music .music-img {
+        margin: 0 auto 120px;
+     }
+
+    .music .play-list {
+        width: 100%;
+    }
+    
+    .player {
+        right: 50%;
+        transform: translate(50%,-100%);
     }
 }
 
@@ -770,6 +1185,16 @@ video{
 
     .profile .hp-row{
         margin: 59px 0 0 0;
+    }
+    .bed {
+        padding:0 0 0 28px;
+    }
+
+    .profile .username {
+        justify-content: center;
+    }
+    .profile .username svg {
+        width: 57px;
     }
 }
 
@@ -823,5 +1248,66 @@ video{
     .profile .hp-row .hp-card h5{
         font-size: 16px;
     }
-    
+    .coffee .hp-row .hp-card{
+        width: 160px;
+        height: 280px;
+    }
+
+    .mr-3 svg{
+        width: 56px;
+    }
+
+    .back-arrow svg{
+        width: 16px;
+    }
+
+    .btn {
+        color: #232323 !important;
+        background: linear-gradient(180deg, white, #a8a8a8);
+        width: 85px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 6px;
+        border: none;
+        
+    }
+
+    .btn1 {
+        width: 150px;
+        height: 50px;
+        background: linear-gradient(180deg, #F39200, #E94E1B);
+        color: #fff !important;
+        font-size: 20px;
+    }
+
+    .btninput{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .btninput input[type=number] {
+        outline: none;
+        background: #ffffff;
+        border: none;
+        max-width: 42px;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #232323;
+        margin-right: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    .item-total {
+        
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .item-price {
+        justify-content: space-evenly;
+    }
 }
+  
