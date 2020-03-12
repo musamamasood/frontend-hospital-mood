@@ -436,7 +436,7 @@ body {
 /* Profile */
 .profile{
     padding: 32px 0 0 138px;
-    max-width: 1090px;
+    max-width: 1230px;
 }
 
 .profile .hp-row{
@@ -762,9 +762,6 @@ video{
 
 /* modal css */
 
-.modal-wrapper {
-    min-height: 100vh;
-}
 
 .modal-content{
     border: none;
@@ -832,9 +829,92 @@ video{
     opacity: 1;
 }
 
+/* calender css */
+
+.calender{
+    /* overflow: hidden; */
+}
+
+.calender .setting-appointment {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.calender .setting-appointment .select-time > span {
+   font-size: 22px;
+   margin: 0 40px 0 0;
+}
+
+.calender .setting-appointment .date-piker {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.calender .setting-appointment .date-piker span{
+    font-size: 16px;
+}
+
+.calender .setting-appointment .btn {
+  width: 268px;
+  padding: 16px;
+  height: auto;
+}
+
+.calender.profile .hp-row{
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 0 -25px 0;
+    padding: 14px 25px;
+}
+
+.calender.profile .hp-row .hp-card {
+    min-width: 160px;
+    min-height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.calender.profile .hp-row .hp-card:nth-child(2n) {
+    margin-right: 15px;
+}
+
+.calender.profile .hp-row .hp-card div {
+    margin: 3px 0 0;
+}
+
+.calender.profile .hp-row .hp-card h3{
+    margin: 0;
+    font-size: 50px;
+}
+
+.calender.profile .hp-row .hp-card h5{
+    margin: 0;
+    font-size: 16px;
+}
+
+.calender .slider-btn{
+    margin: 105px 0 40px;
+    text-align: right;
+}
+
+.calender .slider-btn .btn {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background-image: linear-gradient(#E6E6E6, #FFFFFF);
+    box-shadow: 0 7px 20px 0 rgba(0, 0,0, 0.45);
+    border-radius: 0;
+    margin: 0 20px 0 0;
+}
+
+
 
 /* Online Shop Coffee >> Coffee */
-
+.coffee .hp-row {
+    margin: 36px 0 0 0;
+}
 .btninput{
     display: flex;
     position: relative;
@@ -858,7 +938,6 @@ video{
     font-weight: 700;
     color: #232323;
     margin-right: 10px;
-    padding: 0 0 0px 15px;
     text-align: center;
 }
 
@@ -1053,7 +1132,10 @@ video{
 /* card notes */
 
 .notes .hp-row{
-    margin: 36px auto 40px;
+    padding: 36px 20px 40px;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 0 -20px;
 }
 
 .notes-card h5{
@@ -1069,8 +1151,8 @@ video{
 }
 
 .notes .hp-row .notes-card {
-    width: 264px;
-    height: 237px;
+    min-width: 264px;
+    min-height: 237px;
     margin: 0 11px 31px 0;
     padding: 30px 17px;
     display: inline-block;
@@ -1445,6 +1527,39 @@ video{
     .bed .vertical-controller {
         right: -17%;
     }
+
+    .item-total {
+        text-align: center;
+    }
+
+    .item-price {
+        justify-content: space-evenly;
+    }
+
+    .appointments .appoint-column {
+        color: #fff;
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px 25px 10px 25px;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #434343, #0F1217);
+        margin-bottom: 17px;
+        border-radius: 6px;
+    }
+
+    .appoint-title p{
+        margin: 16px 0;
+    }
+
+    .coffee .hp-row  {
+        justify-content: center;
+    }
+    
+    .calender.profile .hp-row {
+        padding: 14px 35px;
+    }
 }
 
 @media only screen and (max-width:640px) { 
@@ -1496,6 +1611,20 @@ video{
 
     .appointments {
         padding: 0 20px;
+    }
+
+    .item-total {
+        margin: 0 0 20px;
+    }
+
+    .calender .setting-appointment {
+        display: block !important;
+        text-align: center;
+        margin: 15px 0 0;
+    }
+
+    .calender .setting-appointment .select-time{
+        margin:  20px 0;
     }
 }
 
@@ -1629,32 +1758,7 @@ video{
         padding: 0;
         text-align: center;
     }
-    .item-total {
-        
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    .item-price {
-        justify-content: space-evenly;
-    }
-
-    .appointments .appoint-column {
-        color: #fff;
-        align-items: baseline;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4px 25px 10px 25px;
-        justify-content: space-between;
-        background: linear-gradient(180deg, #434343, #0F1217);
-        margin-bottom: 17px;
-        border-radius: 6px;
-    }
-
-    .appoint-title p{
-        margin: 16px 0;
-    }
+    
 }
 
   
