@@ -56,10 +56,6 @@ body {
     font-family: 'PoppinsRegular';
 }
 
-main {
-    min-height: calc(100vh - 190px) ;
-}
-
 .card {
     border-radius: 10px;
     border: none;
@@ -1116,7 +1112,7 @@ video{
 
 .btn3{
     display: block;
-    margin: 0 54px 0px auto;
+    margin: 0 0 0px auto;
     font-size: 18px;
     width: 194px;
     color: #ffffff !important;
