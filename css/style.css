@@ -863,8 +863,8 @@ video{
 .calender.profile .hp-row{
     flex-wrap: nowrap;
     overflow: auto;
-    margin: 0 -25px 0;
-    padding: 14px 25px;
+    margin: 0;
+    padding: 14px 22px;
 }
 
 .calender.profile .hp-row .hp-card {
@@ -907,6 +907,24 @@ video{
     box-shadow: 0 7px 20px 0 rgba(0, 0,0, 0.45);
     border-radius: 0;
     margin: 0 20px 0 0;
+}
+
+.calender.profile .hp-row::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color:transparent;
+}
+
+.calender.profile .hp-row::-webkit-scrollbar
+{
+	height: 9px;
+	background-color: transparent;
+}
+
+.calender.profile .hp-row::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #DCDCDC;
 }
 
 
@@ -1559,6 +1577,7 @@ video{
     
     .calender.profile .hp-row {
         padding: 14px 35px;
+        justify-content: start;
     }
 }
 
@@ -1615,6 +1634,10 @@ video{
 
     .item-total {
         margin: 0 0 20px;
+    }
+
+    .calender {
+       padding: 0 0 0 20px;
     }
 
     .calender .setting-appointment {
