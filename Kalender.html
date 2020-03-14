@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,17 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Jquery -->
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <!-- header start -->
         <header class="header">
             <a class="logo" href="#">
-                    <img src="./images/hospital-logo.png"  alt="hospital logo" />
+                <img src="./images/hospital-logo.png" alt="hospital logo" />
             </a>
             <div class="d-flex align-items-center">
                 <div class="time-wrap">
@@ -27,10 +28,10 @@
                     <span class="date">18 Februar 2020</span>
                 </div>
                 <div class="weather">
-                    <img src="./images/Cloud-icon.png"  alt="Cloud logo" />
+                    <img src="./images/Cloud-icon.png" alt="Cloud logo" />
                     <span class="d-block">
                         21°C
-                    </span> 
+                    </span>
                 </div>
                 <button class="toggler-btn">
                     <img src="./images/burger-icon.png" alt="icon" />
@@ -120,71 +121,70 @@
             </div>
         </main>
         <!-- coffee end -->
-        
+
         <!-- modal start -->
-            <div class="modal-wrapper">
-                <!-- Modal -->
-                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-wrapper">
+            <!-- Modal -->
+            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <img src="./images/cross-icon.png" alt="cross" />
                                 <!-- <span aria-hidden="true">&times;</span> -->
                             </button>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
+                        <div class="modal-body">
+                            <div class="modal-content">
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
                                         <g id="clock" transform="translate(0 -0.001)">
                                             <path id="Shape" d="M6.9,29.265A7.73,7.73,0,0,1,.65,22.742a46.438,46.438,0,0,1,0-15.485A7.729,7.729,0,0,1,6.9.735a60.146,60.146,0,0,1,18.741,0,7.73,7.73,0,0,1,6.251,6.521,46.486,46.486,0,0,1,0,15.485,7.731,7.731,0,0,1-6.251,6.523A60.317,60.317,0,0,1,16.275,30,60.432,60.432,0,0,1,6.9,29.265ZM7.3,3.246a5.2,5.2,0,0,0-4.14,4.433,43.973,43.973,0,0,0,0,14.64A5.2,5.2,0,0,0,7.3,26.754a57.953,57.953,0,0,0,8.971.7,58.071,58.071,0,0,0,8.978-.7,5.2,5.2,0,0,0,4.14-4.435,43.925,43.925,0,0,0,0-14.64,5.2,5.2,0,0,0-4.14-4.433,57.575,57.575,0,0,0-17.95,0ZM18.352,19.8l-2.979-2.979a1.268,1.268,0,0,1-.373-.9V11.094a1.272,1.272,0,0,1,2.543,0v4.3l2.607,2.607a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0)" fill="#232323"/>
                                         </g>
                                         </svg>
-                                        <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                    <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                </div>
+                                <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
+                                <h4 class="type">Behandelnder Arzt</h4>
+                                <div class="d-flex doc-info">
+                                    <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc" />
+                                    <div class="about-doc">
+                                        <h5 class="doc-name">Anna Muller</h5>
+                                        <span class="doc-designation">PHD Heart Specialist</span>
                                     </div>
-                                    <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
-                                    <h4 class="type">Behandelnder Arzt</h4>
-                                    <div class="d-flex doc-info">
-                                        <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc"/>
-                                        <div class="about-doc">
-                                            <h5 class="doc-name">Anna Muller</h5>
-                                            <span class="doc-designation">PHD Heart Specialist</span>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="modal-content">
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
+                                </div>
+                            </div>
+                            <div class="modal-content">
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.543" height="29.999" viewBox="0 0 32.543 29.999">
                                         <g id="clock" transform="translate(0 -0.001)">
                                             <path id="Shape" d="M6.9,29.265A7.73,7.73,0,0,1,.65,22.742a46.438,46.438,0,0,1,0-15.485A7.729,7.729,0,0,1,6.9.735a60.146,60.146,0,0,1,18.741,0,7.73,7.73,0,0,1,6.251,6.521,46.486,46.486,0,0,1,0,15.485,7.731,7.731,0,0,1-6.251,6.523A60.317,60.317,0,0,1,16.275,30,60.432,60.432,0,0,1,6.9,29.265ZM7.3,3.246a5.2,5.2,0,0,0-4.14,4.433,43.973,43.973,0,0,0,0,14.64A5.2,5.2,0,0,0,7.3,26.754a57.953,57.953,0,0,0,8.971.7,58.071,58.071,0,0,0,8.978-.7,5.2,5.2,0,0,0,4.14-4.435,43.925,43.925,0,0,0,0-14.64,5.2,5.2,0,0,0-4.14-4.433,57.575,57.575,0,0,0-17.95,0ZM18.352,19.8l-2.979-2.979a1.268,1.268,0,0,1-.373-.9V11.094a1.272,1.272,0,0,1,2.543,0v4.3l2.607,2.607a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0)" fill="#232323"/>
                                         </g>
                                         </svg>
-                                        <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                    <h2 class="title">19:30 Uhr, 5 Freitag</h2>
+                                </div>
+                                <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
+                                <h4 class="type">Behandelnder Arzt</h4>
+                                <div class="d-flex doc-info">
+                                    <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc" />
+                                    <div class="about-doc">
+                                        <h5 class="doc-name">Anna Muller</h5>
+                                        <span class="doc-designation">PHD Heart Specialist</span>
                                     </div>
-                                    <p class="subtitle">At vero eos et ccusamus et iusto odio qui blanditiis gmx praesentium </p>
-                                    <h4 class="type">Behandelnder Arzt</h4>
-                                    <div class="d-flex doc-info">
-                                        <img class="doc-img" src="./images/lady-doctor.png" alt="lady doc"/>
-                                        <div class="about-doc">
-                                            <h5 class="doc-name">Anna Muller</h5>
-                                            <span class="doc-designation">PHD Heart Specialist</span>
-                                        </div>
-                                    </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- modal end -->
-    
-
 
         <!-- nav start -->
         <nav class="nav-bar">
             <ul class="menu">
                 <li class="menu-item">
-                    <a class="link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+                    <div class="shape">
+                        <a class="link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
                             <defs>
                                 <linearGradient id="hover-effect">
                                     <stop offset="5%" stop-color="#F29810" />
@@ -199,12 +199,14 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Einstellungen</span>
-                    </a>
+                            <span>Einstellungen</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="menu-item">
-                    <a class="link" href="lautstarke.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="37px" viewBox="0 0 39 37" version="1.1">
+                    <div class="shape">
+                        <a class="link" href="lautstarke.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="37px" viewBox="0 0 39 37" version="1.1">
                             <defs>
                                 <linearGradient id="hover-effect">
                                     <stop offset="5%" stop-color="#F29810" />
@@ -219,12 +221,14 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Lautstärke</span>
-                    </a>
+                            <span>Lautstärke</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="menu-item">
-                    <a class="link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="44px" viewBox="0 0 39 44" version="1.1">
+                    <div class="shape">
+                        <a class="link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="44px" viewBox="0 0 39 44" version="1.1">
                             <defs>
                                 <linearGradient id="hover-effect">
                                     <stop offset="5%" stop-color="#F29810" />
@@ -239,12 +243,14 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Helligkeit</span>
-                    </a>
+                            <span>Helligkeit</span>
+                        </a>
+                    </div>
                 </li>
-            <li class="menu-item">
-                    <a class="link active" href="index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="44px" viewBox="0 0 46 44" version="1.1">
+                <li class="menu-item">
+                    <div class="shape">
+                        <a class="link active" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="44px" viewBox="0 0 46 44" version="1.1">
                             <defs>
                                 <linearGradient id="hover-effect">
                                     <stop offset="5%" stop-color="#F29810" />
@@ -259,12 +265,14 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Home</span>
-                    </a>
+                            <span>Home</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="menu-item">
-                    <a class="link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="40px" viewBox="0 0 56 40" version="1.1">
+                    <div class="shape">
+                        <a class="link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="40px" viewBox="0 0 56 40" version="1.1">
                             <linearGradient id="hover-effect">
                                 <stop offset="5%" stop-color="#F29810" />
                                 <stop offset="95%" stop-color="#E94F1B" />
@@ -277,30 +285,34 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Bett</span>
-                    </a>
-                </li>
-            <li class="menu-item">
-                    <a class="link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px" height="38px" viewBox="0 0 42 38" version="1.1">
-                            <linearGradient id="hover-effect">
-                                <stop offset="5%" stop-color="#F29810" />
-                                <stop offset="95%" stop-color="#E94F1B" />
-                            </linearGradient>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="day-version-2" transform="translate(-1015.000000, -722.000000)" fill="#232323" fill-rule="nonzero">
-                                    <g id="Group-27" transform="translate(0.000000, 703.000000)">
-                                        <path d="M1051.74282,19 L1019.87823,19 C1017.18877,19 1015.001,21.1877688 1015.001,23.8772321 C1015.001,26.5666955 1017.18877,28.7544643 1019.87823,28.7544643 L1021.50398,28.7544643 L1021.50398,31.843378 L1021.50398,35.0948661 L1021.50398,33.6599702 L1018.25249,33.6599702 C1017.35452,33.6599702 1016.62674,34.3877447 1016.62674,35.2857143 C1016.62674,36.1836838 1017.35452,36.9114583 1018.25249,36.9114583 L1021.50398,36.9114583 L1021.50398,55.2116815 C1021.50398,55.2393065 1021.50683,55.2659789 1021.5081,55.2929688 C1021.50683,55.3199586 1021.50398,55.346631 1021.50398,55.374256 C1021.50398,56.2722255 1022.23175,57 1023.12972,57 L1044.42697,57 C1045.32494,57 1046.05271,56.2722255 1046.05271,55.374256 C1046.05271,54.4762864 1045.32494,53.7485119 1044.42697,53.7485119 L1024.75546,53.7485119 L1024.75546,36.9114583 L1034.99765,36.9114583 L1034.99765,44.0415526 L1032.89562,41.9398339 C1032.26088,41.3047776 1031.23145,41.3047776 1030.59671,41.9398339 C1029.96166,42.5745726 1029.96166,43.6039988 1030.59671,44.2387376 L1035.47394,49.1159697 C1035.79115,49.4334978 1036.20743,49.5922619 1036.6234,49.5922619 C1037.03936,49.5922619 1037.45564,49.4334978 1037.77285,49.1159697 L1042.65008,44.2387376 C1043.28514,43.6039988 1043.28514,42.5745726 1042.65008,41.9398339 C1042.01534,41.3047776 1040.98591,41.3047776 1040.35118,41.9398339 L1038.24914,44.0415526 L1038.24914,36.9114583 L1046.05271,36.9114583 C1046.95068,36.9114583 1047.67846,36.1836838 1047.67846,35.2857143 C1047.67846,34.3877447 1046.95068,33.6599702 1046.05271,33.6599702 L1024.75546,33.6599702 L1024.75546,35.0948661 L1024.75546,31.843378 L1024.75546,28.7544643 L1051.74282,28.7544643 C1054.43228,28.7544643 1056.62005,26.5666955 1056.62005,23.8772321 C1056.62005,21.1877688 1054.43228,19 1051.74282,19 Z M1051.74282,25.5029762 L1019.87823,25.5029762 C1018.98185,25.5029762 1018.25249,24.7736141 1018.25249,23.8772321 C1018.25249,22.9808502 1018.98185,22.2514881 1019.87823,22.2514881 L1051.74282,22.2514881 C1052.6392,22.2514881 1053.36856,22.9808502 1053.36856,23.8772321 C1053.36856,24.7736141 1052.6392,25.5029762 1051.74282,25.5029762 Z M1054.58787,51.4406622 C1054.58787,53.0117914 1053.31394,54.2857143 1051.74282,54.2857143 C1050.17169,54.2857143 1048.89776,53.0117914 1048.89776,51.4406622 C1048.89776,49.869533 1050.17169,48.5956101 1051.74282,48.5956101 C1053.31394,48.5956101 1054.58787,49.869533 1054.58787,51.4406622 Z M1050.11707,45.0119048 C1050.11707,44.1139352 1050.84485,43.3861607 1051.74282,43.3861607 C1052.64079,43.3861607 1053.36856,44.1139352 1053.36856,45.0119048 C1053.36856,45.9098743 1052.64079,46.6376488 1051.74282,46.6376488 C1050.84485,46.6376488 1050.11707,45.9098743 1050.11707,45.0119048 Z M1050.11707,39.3218006 C1050.11707,38.423831 1050.84485,37.6960565 1051.74282,37.6960565 C1052.64079,37.6960565 1053.36856,38.423831 1053.36856,39.3218006 C1053.36856,40.2197702 1052.64079,40.9475446 1051.74282,40.9475446 C1050.84485,40.9475446 1050.11707,40.2197702 1050.11707,39.3218006 Z M1050.11707,33.6316964 C1050.11707,32.7337269 1050.84485,32.0059524 1051.74282,32.0059524 C1052.64079,32.0059524 1053.36856,32.7337269 1053.36856,33.6316964 C1053.36856,34.529666 1052.64079,35.2574405 1051.74282,35.2574405 C1050.84485,35.2574405 1050.11707,34.529666 1050.11707,33.6316964 Z" id="Shape-Copy"/>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <span>Storen</span>
-                    </a>
+                            <span>Bett</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="menu-item">
-                    <a class="link" href="licht.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
+                    <div class="shape">
+                        <a class="link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px" height="38px" viewBox="0 0 42 38" version="1.1">
+                        <linearGradient id="hover-effect">
+                            <stop offset="5%" stop-color="#F29810" />
+                            <stop offset="95%" stop-color="#E94F1B" />
+                        </linearGradient>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="day-version-2" transform="translate(-1015.000000, -722.000000)" fill="#232323" fill-rule="nonzero">
+                                <g id="Group-27" transform="translate(0.000000, 703.000000)">
+                                    <path d="M1051.74282,19 L1019.87823,19 C1017.18877,19 1015.001,21.1877688 1015.001,23.8772321 C1015.001,26.5666955 1017.18877,28.7544643 1019.87823,28.7544643 L1021.50398,28.7544643 L1021.50398,31.843378 L1021.50398,35.0948661 L1021.50398,33.6599702 L1018.25249,33.6599702 C1017.35452,33.6599702 1016.62674,34.3877447 1016.62674,35.2857143 C1016.62674,36.1836838 1017.35452,36.9114583 1018.25249,36.9114583 L1021.50398,36.9114583 L1021.50398,55.2116815 C1021.50398,55.2393065 1021.50683,55.2659789 1021.5081,55.2929688 C1021.50683,55.3199586 1021.50398,55.346631 1021.50398,55.374256 C1021.50398,56.2722255 1022.23175,57 1023.12972,57 L1044.42697,57 C1045.32494,57 1046.05271,56.2722255 1046.05271,55.374256 C1046.05271,54.4762864 1045.32494,53.7485119 1044.42697,53.7485119 L1024.75546,53.7485119 L1024.75546,36.9114583 L1034.99765,36.9114583 L1034.99765,44.0415526 L1032.89562,41.9398339 C1032.26088,41.3047776 1031.23145,41.3047776 1030.59671,41.9398339 C1029.96166,42.5745726 1029.96166,43.6039988 1030.59671,44.2387376 L1035.47394,49.1159697 C1035.79115,49.4334978 1036.20743,49.5922619 1036.6234,49.5922619 C1037.03936,49.5922619 1037.45564,49.4334978 1037.77285,49.1159697 L1042.65008,44.2387376 C1043.28514,43.6039988 1043.28514,42.5745726 1042.65008,41.9398339 C1042.01534,41.3047776 1040.98591,41.3047776 1040.35118,41.9398339 L1038.24914,44.0415526 L1038.24914,36.9114583 L1046.05271,36.9114583 C1046.95068,36.9114583 1047.67846,36.1836838 1047.67846,35.2857143 C1047.67846,34.3877447 1046.95068,33.6599702 1046.05271,33.6599702 L1024.75546,33.6599702 L1024.75546,35.0948661 L1024.75546,31.843378 L1024.75546,28.7544643 L1051.74282,28.7544643 C1054.43228,28.7544643 1056.62005,26.5666955 1056.62005,23.8772321 C1056.62005,21.1877688 1054.43228,19 1051.74282,19 Z M1051.74282,25.5029762 L1019.87823,25.5029762 C1018.98185,25.5029762 1018.25249,24.7736141 1018.25249,23.8772321 C1018.25249,22.9808502 1018.98185,22.2514881 1019.87823,22.2514881 L1051.74282,22.2514881 C1052.6392,22.2514881 1053.36856,22.9808502 1053.36856,23.8772321 C1053.36856,24.7736141 1052.6392,25.5029762 1051.74282,25.5029762 Z M1054.58787,51.4406622 C1054.58787,53.0117914 1053.31394,54.2857143 1051.74282,54.2857143 C1050.17169,54.2857143 1048.89776,53.0117914 1048.89776,51.4406622 C1048.89776,49.869533 1050.17169,48.5956101 1051.74282,48.5956101 C1053.31394,48.5956101 1054.58787,49.869533 1054.58787,51.4406622 Z M1050.11707,45.0119048 C1050.11707,44.1139352 1050.84485,43.3861607 1051.74282,43.3861607 C1052.64079,43.3861607 1053.36856,44.1139352 1053.36856,45.0119048 C1053.36856,45.9098743 1052.64079,46.6376488 1051.74282,46.6376488 C1050.84485,46.6376488 1050.11707,45.9098743 1050.11707,45.0119048 Z M1050.11707,39.3218006 C1050.11707,38.423831 1050.84485,37.6960565 1051.74282,37.6960565 C1052.64079,37.6960565 1053.36856,38.423831 1053.36856,39.3218006 C1053.36856,40.2197702 1052.64079,40.9475446 1051.74282,40.9475446 C1050.84485,40.9475446 1050.11707,40.2197702 1050.11707,39.3218006 Z M1050.11707,33.6316964 C1050.11707,32.7337269 1050.84485,32.0059524 1051.74282,32.0059524 C1052.64079,32.0059524 1053.36856,32.7337269 1053.36856,33.6316964 C1053.36856,34.529666 1052.64079,35.2574405 1051.74282,35.2574405 C1050.84485,35.2574405 1050.11707,34.529666 1050.11707,33.6316964 Z" id="Shape-Copy"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                            <span>Storen</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="shape">
+                        <a class="link" href="licht.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
                             <linearGradient id="hover-effect">
                                 <stop offset="5%" stop-color="#F29810" />
                                 <stop offset="95%" stop-color="#E94F1B" />
@@ -317,20 +329,24 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Licht</span>
-                    </a>
+                            <span>Licht</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="menu-item">
-                    <a class="link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.824" height="24.201" viewBox="0 0 20.824 24.201">
+                    <div class="shape">
+                        <a class="link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.824" height="24.201" viewBox="0 0 20.824 24.201">
                             <path id="Shape" d="M10.5,24h-.375a4.523,4.523,0,0,1-4.4-3.564H.938a.937.937,0,1,1,0-1.875h.938V12a8.355,8.355,0,0,1,1.7-5.073,8.513,8.513,0,0,1,4.3-3,2.688,2.688,0,0,1-.281-1.2,2.718,2.718,0,1,1,5.437,0,2.684,2.684,0,0,1-.281,1.2,8.52,8.52,0,0,1,4.3,3A8.353,8.353,0,0,1,18.751,12v6.562h.937a.937.937,0,1,1,0,1.875H14.9A4.522,4.522,0,0,1,10.5,24ZM7.673,20.437h0a2.641,2.641,0,0,0,2.451,1.689H10.5a2.649,2.649,0,0,0,2.454-1.689Zm2.639-15A6.569,6.569,0,0,0,3.75,12v6.562H16.876V12A6.57,6.57,0,0,0,10.312,5.438Zm0-3.564a.844.844,0,1,0,.844.844A.844.844,0,0,0,10.312,1.874Z" transform="translate(0.099 0.1)" fill="#232323" stroke="#232323" stroke-miterlimit="10" stroke-width="0.2"/>
-                        </svg>
-                        <span>Rufen</span>
-                    </a>
+                          </svg>
+                            <span>Rufen</span>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </nav>
         <!-- nav end -->
     </div>
 </body>
+
 </html>
