@@ -1295,6 +1295,90 @@ video {
 }
 
 
+/* album list css */
+
+.album {
+    max-width: 100%
+}
+
+.album-list {
+    position: relative;
+    margin: 55px 0 0;
+}
+
+.album-list .player {
+    right: 70px;
+    top: -15px;
+}
+
+.album-list .playlist li:first-child {
+    padding: 0 15px 15px 0;
+}
+
+.album-list .playlist li {
+    padding: 0 15px 15px 0;
+    border-bottom: none
+}
+
+.album-list .playlist li:nth-child(7n) {
+    padding: 0 0 15px 15px;
+}
+
+.album-list .playlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-list .playlist li figure {
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+}
+
+.album-list .playlist li figure::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(#00000000, #000000ad);
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+}
+
+.album-list .playlist li figcaption {
+    display: none;
+}
+
+.album-list .playlist li figure img {
+    width: 148px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.album-list .playlist li figure .album-info {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    left: 5%;
+    right: 5%;
+}
+
+.album-list .playlist li figure .album-info span {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.album-list .playlist li figure .album-info span::after {
+    display: none;
+}
+
+.album.calender .slider-btn {
+    margin: 10px 0 40px;
+}
+
+
 /* media queries */
 
 @media only screen and (max-width:1200px) {
@@ -1377,6 +1461,10 @@ video {
     .nav-bar .menu .menu-item .link {
         padding: 0;
         right: 0 !important;
+    }
+    .nav-bar .menu .menu-item:nth-child(4) .shape::after,
+    .nav-bar .menu .menu-item:nth-child(4) .shape::before {
+        display: none;
     }
     .nav-bar .menu .menu-item:nth-child(6) .link {
         padding: 10px 0 2px 0;
@@ -1564,6 +1652,19 @@ video {
     .player {
         right: 50%;
         transform: translate(50%, -100%);
+    }
+    .album-list {
+        margin: 120px 0 0;
+    }
+    .album-list .player {
+        right: 50%;
+        top: -20px;
+    }
+    .album-list .playlist {
+        justify-content: center;
+    }
+    .album-list .playlist li:nth-child(7n) {
+        padding: 0 15px 15px 0;
     }
     .playlist {
         margin: 30px 0;
