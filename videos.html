@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music</title>
+    <title>Video</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" ></script>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- afterglowplayer -->
+    <script src="https://cdn.jsdelivr.net/npm/afterglowplayer"></script>
+
 </head>
 
 <body>
@@ -41,77 +49,109 @@
         <!-- header end -->
 
         <!-- music start -->
-        <main class="garden profile">
+        <main class="calender profile videos">
             <div class="username d-flex align-items-center">
-                <a href="#" class="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="38" viewBox="0 0 21.642 39.12">
+                <figure class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="39.12" viewBox="0 0 21.642 39.12">
                             <path id="Path" d="M-20.09,17.957-2.514.43A1.474,1.474,0,0,1-.43.433a1.473,1.473,0,0,1,0,2.083L-16.963,19-.433,35.484a1.473,1.473,0,0,1,0,2.083A1.469,1.469,0,0,1-1.473,38a1.469,1.469,0,0,1-1.04-.43L-20.09,20.043A1.471,1.471,0,0,1-20.523,19,1.474,1.474,0,0,1-20.09,17.957Z" transform="translate(21.023 0.619)" fill="#232323" stroke="#232323" stroke-miterlimit="10" stroke-width="1"/>
-                        </svg>
-                </a>
-                <figure class="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="55.233" height="70.001" viewBox="0 0 55.233 70.001">
-                            <path id="Shape" d="M43.59,70H11.645a1.378,1.378,0,0,1-1.34-1.084L4.019,39.375H3.008A1.368,1.368,0,0,1,1.64,38.008V31.992a1.368,1.368,0,0,1,1.368-1.366H9.461A28.158,28.158,0,0,1,.642,15.049l-.618-3.24a1.365,1.365,0,0,1,1.344-1.624,1.325,1.325,0,0,1,.441.073,42.036,42.036,0,0,1,9.671,4.783,22.255,22.255,0,0,1-1.5-8.064v-1.1a1.371,1.371,0,0,1,1.371-1.366,1.381,1.381,0,0,1,.5.093,28.207,28.207,0,0,1,9.744,6.4A20.794,20.794,0,0,1,26.235.885l.338-.4a1.363,1.363,0,0,1,2.087,0l.339.4a20.763,20.763,0,0,1,4.643,10.125,28.151,28.151,0,0,1,9.747-6.4,1.376,1.376,0,0,1,.5-.093,1.368,1.368,0,0,1,1.366,1.366v1.1a22.163,22.163,0,0,1-1.5,8.062,42.169,42.169,0,0,1,9.666-4.78,1.349,1.349,0,0,1,.443-.073,1.365,1.365,0,0,1,1.342,1.624l-.618,3.24a28.12,28.12,0,0,1-8.819,15.577h6.455a1.368,1.368,0,0,1,1.368,1.366v6.017a1.368,1.368,0,0,1-1.368,1.366H51.215L44.927,68.917A1.368,1.368,0,0,1,43.59,70ZM6.814,39.375,12.75,67.266H42.483l5.936-27.892H34.488a1.367,1.367,0,0,0-.008-2.735H50.859V33.36H4.374V36.64H33.779a1.367,1.367,0,0,0,.007,2.735ZM3.168,13.693l.161.843a25.37,25.37,0,0,0,10.557,16.09h8.506l-.4-.665A39.649,39.649,0,0,0,3.168,13.693Zm48.9,0A39.664,39.664,0,0,0,33.239,29.958l-.4.667h8.508a25.379,25.379,0,0,0,10.557-16.09l.159-.843ZM12.74,7.983a19.5,19.5,0,0,0,5.705,12.822,1.422,1.422,0,0,1,.188.238,41.832,41.832,0,0,1,5.71,7.517l1.229,2.065h4.087l1.229-2.065A42.248,42.248,0,0,1,36.6,21.039a1.468,1.468,0,0,1,.187-.233,19.49,19.49,0,0,0,5.7-12.822A25.6,25.6,0,0,0,28.942,24.528a1.367,1.367,0,0,1-2.651,0A25.576,25.576,0,0,0,12.74,7.983ZM27.615,3.541h0a17.955,17.955,0,0,0-3.544,10.316,28.414,28.414,0,0,1,3.547,6.109,28.492,28.492,0,0,1,3.544-6.107A17.956,17.956,0,0,0,27.615,3.541Z" transform="translate(0.001 0)"/>
-                            </svg>
+                          </svg>
                 </figure>
-                <h2>Einmalige Gartenanlage</h2>
+                <figure class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70.127" height="70.4" viewBox="0 0 70.127 70.4">
+                        <path id="Combined_Shape" data-name="Combined Shape" d="M2.051,70A2.053,2.053,0,0,1,0,67.949V2.051A2.053,2.053,0,0,1,2.051,0H67.675a2.053,2.053,0,0,1,2.051,2.051v65.9A2.053,2.053,0,0,1,67.675,70Zm56.738-4.1h6.836V59.063H58.789Zm-10.938,0h6.836V59.063H47.851Zm-10.937,0H43.75V59.063H36.914Zm-10.938,0h6.836V59.063H25.977Zm-10.938,0h6.836V59.063H15.039ZM4.1,65.9h6.836V59.063H4.1Zm0-10.937H65.625V15.039H4.1ZM58.789,10.938h6.836V4.1H58.789Zm-10.938,0h6.836V4.1H47.851Zm-10.937,0H43.75V4.1H36.914Zm-10.938,0h6.836V4.1H25.977Zm-10.938,0h6.836V4.1H15.039Zm-10.938,0h6.836V4.1H4.1ZM26.923,47.722A2.109,2.109,0,0,1,26,45.947V24.052a2.111,2.111,0,0,1,.922-1.776,1.7,1.7,0,0,1,1.85-.006L46.067,33.217a2.169,2.169,0,0,1,0,3.565L28.772,47.729a1.7,1.7,0,0,1-1.85-.006ZM30,43l12-7.5L30,28Z" transform="translate(0.2 0.2)" fill="#232323" stroke="#232323" stroke-miterlimit="10" stroke-width="0.4"/>
+                    </svg>
+                </figure>
+                <div>
+                    <h2>
+                        <b>Videos</b>
+                    </h2>
+                    <span class="d-block">26 Chanels</span>
+                </div>
             </div>
-            <div class="garden-slider">
-                <!--Carousel-->
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="w-100 d-flex">
-                                <div class="card slider-content">
-                                    <h3>EINMALIGE GARTENANLAGE</h3>
-                                    <p class="para">
-                                        Sind Sie bereits fit für einen kurzen Spaziergang? Unsere grosse Gartenanlage wir mit Hingabe gepflegt und gibt Ihnen die Möglichkeit, sich vom Spitalalltag zeitweilig auszuklinken. Viele verschiedene Bereiche unseres weitläufigen Gartenareals sind mit
-                                        Sitzmöbeln ausgestattet. Besonders empfehlen wir die Sitzgelegenheiten unter den Platanen gleich vor dem Haupteingang. Der ideale Ort, um ein wenig die Seele baumeln zu lassen.
-                                    </p>
-                                </div>
-                                <figure class="card slider-img">
-                                    <img src="./images/slider-img-1.png" alt="slider img" />
-                                </figure>
-                            </div>
+            <div class="videos-wrapper">
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div onclick="playVideo()" class="play-btn">
+                            <i class="fas fa-play"></i>  
                         </div>
-                        <div class="carousel-item">
-                            <div class="w-100 d-flex">
-                                <div class="card slider-content">
-                                    <h3>EINMALIGE GARTENANLAGE</h3>
-                                    <p class="para">
-                                        Sind Sie bereits fit für einen kurzen Spaziergang? Unsere grosse Gartenanlage wir mit Hingabe gepflegt und gibt Ihnen die Möglichkeit, sich vom Spitalalltag zeitweilig auszuklinken. Viele verschiedene Bereiche unseres weitläufigen Gartenareals sind mit
-                                        Sitzmöbeln ausgestattet. Besonders empfehlen wir die Sitzgelegenheiten unter den Platanen gleich vor dem Haupteingang. Der ideale Ort, um ein wenig die Seele baumeln zu lassen.
-                                    </p>
-                                </div>
-                                <figure class="card slider-img">
-                                    <img src="./images/slider-img-1.png" alt="slider img" />
-                                </figure>
-                            </div>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
+                    <video class="afterglow" id="myvideo1" width="1280" height="720">
+                        <source type="video/mp4" src="http://afterglowplayer.com/sandbox/v1/afterglow_local_hd.mp4" />
+                    </video>
+                </div>
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>  
                         </div>
-                        <div class="carousel-item">
-                            <div class="w-100 d-flex">
-                                <div class="card slider-content">
-                                    <h3>EINMALIGE GARTENANLAGE</h3>
-                                    <p class="para">
-                                        Sind Sie bereits fit für einen kurzen Spaziergang? Unsere grosse Gartenanlage wir mit Hingabe gepflegt und gibt Ihnen die Möglichkeit, sich vom Spitalalltag zeitweilig auszuklinken. Viele verschiedene Bereiche unseres weitläufigen Gartenareals sind mit
-                                        Sitzmöbeln ausgestattet. Besonders empfehlen wir die Sitzgelegenheiten unter den Platanen gleich vor dem Haupteingang. Der ideale Ort, um ein wenig die Seele baumeln zu lassen.
-                                    </p>
-                                </div>
-                                <figure class="card slider-img">
-                                    <img src="./images/slider-img-1.png" alt="slider img" />
-                                </figure>
-                            </div>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
+                    <video class="afterglow" id="myvideo1" width="1280" height="720">
+                        <source type="video/mp4" src="http://afterglowplayer.com/sandbox/v1/afterglow_local_hd.mp4" />
+                    </video>
+                </div>
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>  
                         </div>
-                    </div>
-                    <!-- Controls -->
-
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
+                </div>
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>  
+                        </div>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
+                </div>
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>  
+                        </div>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
+                </div>
+                <div class="video card">
+                    <figure class="video-img">
+                        <img src="./images/active-song.png" alt="video img">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>  
+                        </div>
+                    </figure>
+                    <h6 class="video-name">
+                        Sed ut perspiciatis unde
+                        omnis iste natus error
+                    </h6>
+                    <span class="video-time">06:24</span>
                 </div>
             </div>
         </main>
@@ -299,25 +339,22 @@
             </ul>
         </nav>
         <!-- nav end -->
-
-        <!-- script start -->
-        <script>
-            $(".carousel").on("touchstart", function(event) {
-                var xClick = event.originalEvent.touches[0].pageX;
-                $(this).one("touchmove", function(event) {
-                    var xMove = event.originalEvent.touches[0].pageX;
-                    if (Math.floor(xClick - xMove) > 5) {
-                        $(this).carousel('next');
-                    } else if (Math.floor(xClick - xMove) < -5) {
-                        $(this).carousel('prev');
-                    }
-                });
-                $(".carousel").on("touchend", function() {
-                    $(this).off("touchmove");
-                });
-            });
-        </script>
     </div>
+    <script>
+    $('.videos-wrapper').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1
+    });
+
+    playVideo = () => {
+         const currentVideo = $(this).parent()
+         $(currentVideo).addClass('play-video') 
+         console.log("click",$(this).addClass('play-video') )
+
+    }
+
+    </script>
 </body>
 
 </html>
