@@ -475,16 +475,16 @@ body {
 
 .nav-bar .menu .active.menu-item:nth-child(n+5) .shape {
     background: linear-gradient(30deg,#ffffff,#FF875D,#ffffff); 
-    box-shadow: -13px 24px 45px 0 #ffc1075e;
+    box-shadow: -13px 24px 45px 0 #c8542b59;
 }
 
 .nav-bar .menu .active.menu-item:nth-child(-n+3) .shape {
     background: linear-gradient(-30deg,#ffffff,#FF875D,#ffffff); 
-    box-shadow: 10px 4px 10px 0 #ffc1075e;
+    box-shadow: 10px 4px 10px 0 #c8542b59;
 }
 
 .nav-bar .menu .active.menu-item:nth-child(4) .gradient-shape {
-    box-shadow: 0px 66px 20px 51px #ffc10766;
+    box-shadow: 0px 66px 20px 51px #c8542b59;
     border-top: 2px solid #ffc1075e;
 }
 
