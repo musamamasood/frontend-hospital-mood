@@ -137,7 +137,7 @@ body {
 }
 
 .hp-card2{
-    background-image: linear-gradient(#D4D4D4, #FCFCFC);
+    background-image: linear-gradient(#FCFCFC 0%,#D4D4D4 70%,#FCFCFC 100% );
     box-shadow:0 11px 28px 0px #8f8f8f87;
 }
 
@@ -161,7 +161,7 @@ body {
 
 .hp-card2::after {
     background-color: #E1E1E1;
-    opacity: 0.6;
+    opacity: 0.8;
     border-radius: 0px 82% 0 0;
     transform: rotate(0);
     right: 0;
@@ -178,6 +178,10 @@ body {
     margin: 0 auto;
 }
 
+.dark-view {
+    background: url('./../images/app-background2.png') no-repeat top center;
+    background-size: cover;
+}
 
 /* controller */
 
@@ -249,6 +253,10 @@ body {
     color: #232323;
 }
 
+.dark-view .header .time-wrap {
+    color: #ffffff;
+}
+
 .header .time-wrap .time {
     font-size: 75px;
     line-height: 1;
@@ -258,6 +266,10 @@ body {
 .header .time-wrap .date {
     font-size: 20px;
     font-family: 'PoppinsLight';
+}
+
+.dark-view .header .weather span {
+    color: #ffffff;
 }
 
 .header .weather span {
@@ -332,10 +344,20 @@ body {
     z-index: 1;
 }
 
-.home2 .hp-row .hp-card h5 {
+.home2 .hp-row .hp-card2 h5 {
     color: #222222;
 }
 
+
+/* home3 */
+
+.home3 .hp-card3{
+    background-image: linear-gradient(#F39200, #E94E1B);
+}
+
+.home3  .hp-card3::after{
+    content: none;
+}
 
 /* nav css */
 
@@ -1751,9 +1773,9 @@ video {
     .nav-bar .menu .menu-item:nth-child(2) .link {
         padding: 10px 0 2px 0;
     }
-    .nav-bar .menu .menu-item .link.active #Shape,
-    .nav-bar .menu .menu-item .link.active #day-version-2 path,
-    .nav-bar .menu .menu-item .link.active #day-version-2 {
+    .nav-bar .menu .menu-item.active .link #Shape,
+    .nav-bar .menu .menu-item.active .link svg #day-version-2 path,
+    .nav-bar .menu .menu-item.active .link svg #day-version-2 {
         fill: #ED6E0E;
         stroke: #ED6E0E;
     }
@@ -1907,6 +1929,12 @@ video {
     .hp-row .hp-card .figure img {
         width: 54px;
     }
+
+    .hp-row .hp-card2 .figure svg {
+       width: 70px; 
+       height: 68px;
+    }
+
     .header .time-wrap {
         display: none;
     }
