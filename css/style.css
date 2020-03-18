@@ -445,7 +445,7 @@ body {
     background: linear-gradient(20deg,#0F1217 7%,#ffffff,#434343 57%);
     width: 118%;
     position: relative;
-    /* right: -15px; */
+    box-shadow: 0 30px 44px 0 rgba(0, 0, 0, 0.9);
 }
 
 .nav-bar3.nav-bar .menu li.menu-item:nth-child(n+5) .shape {
@@ -467,6 +467,7 @@ body {
     width: 118%;
     position: relative;
     left: -28px;
+    box-shadow: 0 30px 44px 0 rgba(0, 0, 0, 0.9);
 }
 
 .nav-bar3.nav-bar .menu li.menu-item:nth-child(-n+3) .shape {
